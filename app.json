@@ -1,0 +1,11 @@
+{
+  "pages":[
+    "pages/index/index"
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#1296db",
+    "navigationBarTitleText": "微享WiFi",
+    "navigationBarTextStyle": "#fff"
+  },
+  "debug": true
+}

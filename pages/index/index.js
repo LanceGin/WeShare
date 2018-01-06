@@ -12,7 +12,23 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    wx.getNetworkType({
+      success: function (res) {
+        // 返回网络类型, 有效值：
+        // wifi/2g/3g/4g/unknown(Android下不常见的网络类型)/none(无网络)
+        const networkType = res.networkType
+        console.log(111111, networkType)
+        // 当网络环境为wifi时，获取Wi-Fi信息
+        if (networkType === 'wifi') {
+          console.log('获取Wi-Fi信息')
+          wx.getWifiList({
+            success: function (res) {
+              console.log(res)
+            }
+          })
+        }
+      }
+    }) 
   },
 
   /**

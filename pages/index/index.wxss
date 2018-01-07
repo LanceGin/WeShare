@@ -1,1 +1,15 @@
 /* pages/index/index.wxss */
+.connected-wifi {
+  background: #1296db;
+  color: #ffffff;
+  text-align: center;
+  height: 25vh;
+}
+.wifi-name {
+  padding-top: 2vh;
+}
+.wifi-status {
+}
+.operation {
+  padding-top: 5vh;
+}

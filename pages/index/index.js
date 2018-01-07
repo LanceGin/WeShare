@@ -5,13 +5,15 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    name: '',
+    status: ''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    const self = this
     wx.getNetworkType({
       success: function (res) {
         // 返回网络类型, 有效值：
@@ -21,9 +23,13 @@ Page({
         // 当网络环境为wifi时，获取Wi-Fi信息
         if (networkType === 'wifi') {
           console.log('获取Wi-Fi信息')
-          wx.getWifiList({
+          wx.getConnectedWifi({
             success: function (res) {
               console.log(res)
+              self.setData({
+                name: res.wifi.SSID,
+                status: true
+              })
             }
           })
         }

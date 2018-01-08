@@ -6,7 +6,8 @@
   height: 25vh;
 }
 .wifi-name {
-  padding-top: 2vh;
+  padding-top: 4vh;
+  font-weight: bold;
 }
 .wifi-status {
 }

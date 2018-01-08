@@ -1,10 +1,22 @@
 <!--pages/index/index.wxml-->
 <view class='connected-wifi'>
   <view class='wifi-name'>
-    <text>{{name}}</text>
+    <block wx:if="{{ name }}">
+      <text>{{name}}</text>
+    </block>
+    <block wx:else>
+      <text>(｡ì _ í｡)</text>
+    </block>
   </view>
   <view class='wifi-status'>
-    <text>{{status}}</text>
+    <block wx:if="{{ status == true }}">
+      <icon type="success_no_circle" size="20"/>
+      <text>已连接</text>
+    </block>
+    <block wx:elif="{{ status == false }}">
+      <icon type="cancel" size="20"/>
+      <text>未连接</text>
+    </block>
   </view>
   <view class='operation'>
     <text>Detail</text>

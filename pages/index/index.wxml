@@ -23,3 +23,15 @@
     <text>Share</text>
   </view>
 </view>
+
+<view class='wifi-nearby'>
+  <view class='label-nearby'>附近Wi-Fi</view>
+  <scroll-view>
+    <view class='wifi-box'>hfkjsdhfd</view>
+    <view class='wifi-box'>hfkjsdhfd</view>
+    <view class='wifi-box'>hfkjsdhfd</view>
+    <view class='wifi-box'>hfkjsdhfd</view>
+    <view class='wifi-box'>hfkjsdhfd</view>
+    <view class='wifi-box'>hfkjsdhfd</view>
+  </scroll-view>
+</view>

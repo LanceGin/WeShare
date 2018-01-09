@@ -1,4 +1,7 @@
 /* pages/index/index.wxss */
+page {
+  background: #eee;
+}
 .connected-wifi {
   background: #1296db;
   color: #ffffff;
@@ -13,4 +16,17 @@
 }
 .operation {
   padding-top: 5vh;
+}
+.wifi-nearby {
+  height: 75vh;
+  background: #fff;
+}
+.label-nearby {
+  background: #eee;
+  padding: 0.2rem 1rem;
+}
+.wifi-box {
+  padding: 0.8rem 1rem;
+  background: #fff;
+  border-bottom: 1px #eee solid;
 }

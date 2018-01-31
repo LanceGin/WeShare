@@ -19,19 +19,7 @@
     </block>
   </view>
   <view class='operation'>
-    <text>Detail</text>
-    <text>Share</text>
+    <button wx:if="{{ status == true }}">分享Wi-Fi</button>
+    <button wx:elif="{{ status == false }}">连接Wi-Fi</button>
   </view>
-</view>
-
-<view class='wifi-nearby'>
-  <view class='label-nearby'>附近Wi-Fi</view>
-  <scroll-view>
-    <view class='wifi-box'>hfkjsdhfd</view>
-    <view class='wifi-box'>hfkjsdhfd</view>
-    <view class='wifi-box'>hfkjsdhfd</view>
-    <view class='wifi-box'>hfkjsdhfd</view>
-    <view class='wifi-box'>hfkjsdhfd</view>
-    <view class='wifi-box'>hfkjsdhfd</view>
-  </scroll-view>
 </view>

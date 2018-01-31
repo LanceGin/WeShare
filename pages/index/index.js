@@ -36,20 +36,20 @@ Page({
         }
       }
     })
-    wx.startWifi({
-      success: function (res) {
-        console.log(222, res)
-        wx.getWifiList({
-          success: function (res) {
-            wx.onGetWifiList(
-              function (res) {
-                console.log(333, res)
-              }
-            )  
-          }
-        })
-      }
-    })
+    // wx.startWifi({
+    //   success: function (res) {
+    //     console.log(222, res)
+    //     wx.getWifiList({
+    //       success: function (res) {
+    //         wx.onGetWifiList(
+    //           function (res) {
+    //             console.log(333, res)
+    //           }
+    //         )  
+    //       }
+    //     })
+    //   }
+    // })
   },
 
   /**
